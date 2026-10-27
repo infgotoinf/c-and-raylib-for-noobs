@@ -1,0 +1,40 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "git": {
+    "diff_base": "default_branch"
+  },
+  "autosave": "on_focus_change",
+  "disable_ai": true,
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "icon_theme": "Zed (Default)",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": "Gruvbox Dark",
+  "terminal": {
+    "shell": {
+      "with_arguments": {
+        "title_override": "MSYS2 UCRT64",
+        "program": "cmd.exe",
+        "args": [
+          "/k",
+          "C:\\msys64\\msys2_shell.cmd",
+          "-defterm",
+          "-here",
+          "-no-start",
+          "-ucrt64",
+          "-shell",
+          "fish"
+        ]
+      }
+    }
+  }
+}
