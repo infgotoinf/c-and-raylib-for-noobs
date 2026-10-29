@@ -124,11 +124,6 @@ Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS
 
 That's it with shell commands that you need to know for now.
 
-#### Exsersises
-
-- Find a package with `fastfetch` in it's name for UCRT64 platform and install it. Run `fastfetch` in your terminal and send me the screenshot.
-- Find a package with `cow` in it's name for UCRT64 platform and install it. Figure out how to make cow say something and send me the screenshot.
-
 ---
 
 ### IDE
@@ -150,4 +145,38 @@ That's it with shell commands that you need to know for now.
 
 ### Git
 
-**Git** is a distributed version control system, but to version control your code you need to store it somethere, for it you need
+**Git** is a distributed version control system, but to version control your code you need to store it somethere, of course you can store it on your PC, but if you want to share it, or work together with someone, or just be able to easly access it from different devices you need a **hosting service** that uses Git. We'll be using **Github** for that.
+
+#### Setup
+
+1. **Create** a **Github account** on the [official site of Github](https://github.com/).
+2. Login to your Github account from MSYS2 shell:
+    ```shell
+    gh auth login
+    ```
+3. Check that login was successful:
+    ```shell
+    gh auth status
+    ```
+4. Set **your user email** and **user name** for Git operations:
+    ```shell
+    git config --global user.email "you@example.com" # Put your email here
+    git congit --global user.name "Your Name" # Put your name here
+    ```
+
+That was the whole Git setup.
+
+---
+
+#### Basic Git commands
+
+
+
+### Exsersises
+
+#### Terminal usage
+
+- Find a package with `fastfetch` in it's name for UCRT64 platform and install it. Run `fastfetch` in your terminal and send me the screenshot.
+- Find a package with `cow` in it's name for UCRT64 platform and install it. Figure out how to make cow say something and send me the screenshot.
+
+#### Git usage
