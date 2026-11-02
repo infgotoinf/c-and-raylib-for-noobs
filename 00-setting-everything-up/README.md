@@ -5,7 +5,7 @@
 This entry will provide necessary steps to **setup** your **environment** for *pleasant* (but *not platform dependent*) development on Windows, teach you some basic **bash commands**, how to **use terminal** and **IDE**, **compile** and **run code**.
 
 > [!NOTE]
-> You will need about 2.5Gb of storage available.
+> You will need about 4Gb of storage available.
 
 ### MSYS2
 
@@ -37,8 +37,10 @@ pacman -Syu
 ```shell
 pacman -S mingw-w64-ucrt-x86_64-gcc \
     mingw-w64-ucrt-x86_64-git mingw_w64-ucrt-x86_64-github-cli \
-    mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja \
+    mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja make\
     mingw-w64-ucrt-x86_64-clang-tools-extra \
+    mingw-w64-ucrt-x86_64-raylib \
+    mingw-w64-ucrt-x86_64-emscripten \
     fish
 ```
 
@@ -48,8 +50,10 @@ pacman -S mingw-w64-ucrt-x86_64-gcc \
 This command installs:
 1. `mingw-w64-ucrt-x86_64-gcc` - compiler
 1. `mingw-w64-ucrt-x86_64-git mingw_w64-ucrt-x86_64-github-cli` - source control system
-1. `mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja` - build system generator to build an executable, manage dependencies and configure the project
+1. `mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja make` - build system generator and build system to build an executable, manage dependencies and configure the project
 1. `mingw-w64-ucrt-x86_64-clang-tools-extra` - C/C++ LSP (more about LSP in the [IDE chapter](#ide))
+1. `mingw-w64-ucrt-x86_64-raylib` - a simple and easy-to-use library to enjoy videogames programming!
+1. `mingw-w64-ucrt-x86_64-emscripten` - library to compile C/C++ code to WebAssembly, to run it in a web browser (it's package is 1.6Gb on Windows btw)
 1. `fish` - user-friendly interactive Unix shell
 
 </details>
