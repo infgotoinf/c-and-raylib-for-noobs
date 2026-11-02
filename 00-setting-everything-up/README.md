@@ -172,9 +172,31 @@ That was the whole Git setup.
 
 ---
 
-#### Basic Git commands
+#### Basic Git and GitHub CLI commands
+
+I think the easiest way to explain Git and GiHub CLI commands is by examples:
+
+##### Creating a new repository
+
+0. If you want to push an existing folder, you need to initialize your repository:
+    ```shell
+    cd <FOLDER>
+    got init
+    ```
+1. Create repository on GitHub:
+    ```shell
+    gh repo create
+    ```
+    or if you want to use some persons template, you must specify everything in one command
+    ```shell
+    gh repo create
+    ```
+
+##### Making changes
 
 
+
+1.
 
 ### Exsersises
 
