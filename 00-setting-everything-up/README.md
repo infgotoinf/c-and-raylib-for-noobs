@@ -1,17 +1,20 @@
+
+_NOTICE:_
+_Words between arrows are placeholders meant to be replaced, for example `<filename>` -> `README.md`_
+
+
 # Setting everything up
 
-## Windows
-
-This entry will provide necessary steps to **setup** your **environment** for *pleasant* (but *not platform dependent*) development on Windows, teach you some basic **bash commands**, how to **use terminal** and **IDE**, **compile** and **run code**.
+This entry will provide necessary steps to **setup** your **environment** for _pleasant_ (but _not platform dependent_) development on Windows (if you use Linux then the steps are _mostly_ the same, you need to use your package manager and install packages with their actual name), teach you some basic **bash commands**, how to **use terminal** and **IDE**, **compile** and **run code**.
 
 > [!NOTE]
 > You will need about 4Gb of storage available.
 
-### MSYS2
+## MSYS2
 
-**MSYS2** (Software Distribution and Building Platform for Windows) is basically a **Linux terminal emulator for Windows** *how I like to call it*. You will need it to **install essential packages for development**. It's much *faster* to install things via *terminal* 👍, than via *browser* 👎 so that's how you'll be doing it. ~~But Window is useless, so we need to install Linux terminal for this.~~
+**MSYS2** (Software Distribution and Building Platform for Windows) is basically a **Linux terminal emulator for Windows** _how I like to call it_. You will need it to **install essential packages for development**. It's much _faster_ to do things via _terminal_ 👍, than via _browser_ 👎 so that's how you'll be doing it. ~~But Window is useless, so we need to install Linux terminal for this.~~
 
-#### Installation and setup
+### Installation and setup
 
 1. Install *msys2-x86-64* from the [official web site](https://www.msys2.org/).
 2. After installing MSYS2 you'll get many instences of it appeared in your start menu. You need to launch **MSYS2 UCRT64**.
@@ -26,7 +29,7 @@ pacman -Syu
 ```
 
 > [!TIP]
-> You can use `Shift+ins` or the **middle mouse button** to *paste text*.
+> You can use `Shift+ins` or the **middle mouse button** to _paste text_.
 
 > [!IMPORTANT]
 > Rerun the command if you get any errors.
@@ -65,11 +68,11 @@ setx PATH "%PATH%;C:\msys64\ucrt64\bin"
 
 ---
 
-#### Basic shell commands
+### Basic shell commands
 
 This paragraph will introduce you to some basic ~~Linux~~ MSYS2 **shell commands**.
 
-##### pacman
+#### pacman
 
 Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS2 ~~and also Arch btw~~ and it is used to (surprise-surprise) manage packages.
 
@@ -81,16 +84,27 @@ Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS
     ```shell
     pacman -S cmatrix
     ```
+- Run installed package:
+    ```shell
+    cmatrix
+    ```
+> [!TIP]
+> Use `Ctrl+C` to kill a running process.
+
 - `pacman -Rns <package-name>` to delete a package with it's dependencies that no longer used:
     ```shell
     pacman -Rns cmatrix
+    ```
+- See what will happend if you try to run it after deleting it:
+    ```shell
+    cmatrix
     ```
 - `pacman -h` of `pacman --help` to print help info.
 
 > [!TIP]
 > Majority of **CLI** (Command Line Interface) utils provide `-h` or `--help` flag, so you can learn what they do and what arguments they accept.
 
-##### ls
+#### ls
 
 `ls` is used to **list files of directories**.
 
@@ -98,15 +112,15 @@ Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS
 - `ls ..` to list files in parent directory of current directory.
 - `ls <some-dir-name>` to list files in some directory:
     ```shell
-    ls main/include # Using relative path
-    ls /C/Users # Using absolute path
+    ls main/include # Using relative path (from current directory)
+    ls /C/Users # Using absolute path (slash / is a root directory in Linux, directory of all directories, like C:\ on Windows)
     ```
 - `ls -h` or `ls --help` to print more info.
 
 > [!TIP]
 > You can use **Arrow keys Up** and **Down** to scroll through command history.
 
-##### cd
+#### cd
 
 `cd` is used to **change working directory**.
 
@@ -126,35 +140,41 @@ Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS
 > 2. `ls ` (with space) and hitting `Tab` multiple times.
 > 3. `ls -` (with hypothen after space) and hitting `Tab` multiple times.
 
-That's it with shell commands that you need to know for now.
+That were all shell commands that you need to know for now.
+
+### Terminal usage exersises
+
+- Find a package with `fastfetch` in it's name for UCRT64 platform and install it. Run `fastfetch` in your terminal.
+- Find a package with `cow` in it's name for UCRT64 platform and install it. Figure out how to make cow say something.
+- Enter the root foolder of your C disk with `cd /C`. And using just `ls` and `cd` find there your `Pictures` folder.
+- Think about where you want to store all your programming projects. Using just `cd` and `ls` find a folder there you want (I suggest to use `Documents`, or `Desktop`, or your user's folder for that). Then you entered that folder, create a folder for your projects with `mkdir Programming` or whatever you like to name it. Enter newely create folder.
 
 ---
 
-### IDE
+## IDE
 
-**IDE** (Integrated Development Environment) is the application that you use for writing code. For comfortable development it need to support **syntax highlighting** and **LSP**
-(Language Server Protocol (thing that your IDE uses for error checking at runtime and code completition))
+**IDE** (Integrated Development Environment) is the application that you use for writing code. For comfortable development it need to support **syntax highlighting** and **LSP** (Language Server Protocol (thing that your IDE uses for error checking at runtime and code completition)).
 
-#### Choosing an IDE
+### Choosing an IDE
 
 **Visual Studio** is a popular IDE for **C/C++** and **C#** development available **only** for **Windows**. With 'Desktop development with C++' selected takes up enormous **12GB of storage** 💀 and it requires you to configure project specific settings with a looot of options, for you to do development in this specific IDE ☠️.
 
-**Visual Studio Code** is the most **popular cross-platform normie** IDE, works well with *almost* **any programming language**. Takes up **1-1.5GB of storage** (needs extensions to work with C/C++). Also depends on project settings. Not that bad, but not good ether 😐, there are better options.
+**Visual Studio Code** is the most **popular cross-platform normie** IDE, works well with _almost_ **any programming language**. Takes up **1-1.5GB of storage** (needs extensions to work with C/C++). Also depends on project settings. Not that bad, but not good ether 😐, there are better options.
 
 **[Zed](https://zed.dev/download)** is a relatively **new**, **modern** and **fast** IDE, works well with **many programming languages**. You can do C/C++ development without any project-specific settings 👍. If I were a normie, I'd use it 👍🔥🔥🔥. Takes up about **600MB of storage**.
 
 > [!NOTE]
-> You will be using **Zed**. So install it from the [official web site](https://zed.dev/download) if you haven't yet.
+> You will be using **Zed**. So install it from the [official web site](https://zed.dev/download) if you haven't done that yet.
 
 
-### Git
+## Git
 
-**Git** is a distributed version control system, but to version control your code you need to store it somethere, of course you can store it on your PC, but if you want to share it, or work together with someone, or just be able to easly access it from different devices you need a **hosting service** that uses Git. We'll be using **Github** for that.
+**Git** is a distributed **version control system**, but to version control your code you need to _store it_ somethere, of course you can store it on your PC, but if you want to _share it_, or _work together with someone_, or just be able to easly _access it from different devices_ you need a **hosting service** that uses Git. We'll be using **Github** for that.
 
-#### Setup
+### Setup
 
 1. **Create** a **Github account** on the [official site of Github](https://github.com/).
-2. Login to your Github account from MSYS2 shell:
+2. **Log in** to your Github account from MSYS2 shell:
     ```shell
     gh auth login
     ```
@@ -172,37 +192,65 @@ That was the whole Git setup.
 
 ---
 
-#### Basic Git and GitHub CLI commands
+### Basic Git and GitHub CLI commands
 
-I think the easiest way to explain Git and GiHub CLI commands is by examples:
+I think the easiest way to explain Git and GiHub CLI commands is by _examples_:
 
-##### Creating a new repository
+#### Creating a new repository
 
-0. If you want to push an existing folder, you need to initialize your repository:
+0. If you want to use an _existing folder_, you need to **initialize** your repository:
     ```shell
-    cd <FOLDER>
+    cd <folder>
     got init
     ```
 1. Create repository on GitHub:
     ```shell
     gh repo create
     ```
-    or if you want to use some persons template, you must specify everything in one command
+    or if you want to use someone's _template_, you must specify everything in one command:
     ```shell
-    gh repo create
+    gh repo create -c -p https://github.com/infgotoinf/enjoy-raylib <your-repo-name> --public
     ```
 
-##### Making changes
+#### Commiting ~~crimes~~ changes
 
+To _save_ and _upload changes_ you made to your repo you do this:
 
+0. Optionally list all changes:
+    ```shell
+    git status
+    ```
+1. **Add files** _you want_ to be _updated_ to the **index** so they can be later **commited**:
+    ```shell
+    git add <filename1> <filename2> <filename3>
+    ```
+    or if you want to add all changes:
+    ```shell
+    git add .
+    ```
+2. Create a **commit**, write a **commit message**:
+    ```shell
+    git commit -m "<your-commit-message>"
+    ```
+    or to write commit in your _editor_:
+    ```shell
+    git commit
+    ```
+3. Push your changes:
+    ```shell
+    git push
+    ```
 
-1.
+#### Cloning existing repository
 
-### Exsersises
+```shell
+git clone <link-to-the-repo>
+```
 
-#### Terminal usage
+#### Fetching changes that were made to repo
 
-- Find a package with `fastfetch` in it's name for UCRT64 platform and install it. Run `fastfetch` in your terminal and send me the screenshot.
-- Find a package with `cow` in it's name for UCRT64 platform and install it. Figure out how to make cow say something and send me the screenshot.
+```shell
+git pull
+```
 
-#### Git usage
+### Git usage exersises
