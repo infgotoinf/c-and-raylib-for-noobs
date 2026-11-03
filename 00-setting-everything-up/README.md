@@ -96,7 +96,7 @@ Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS
     ```shell
     pacman -Rns cmatrix
     ```
-- See what will happend if you try to run it after deleting it:
+- See what will happened if you try to run it after deleting it:
     ```shell
     cmatrix
     ```
@@ -143,7 +143,7 @@ Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS
 
 That were all shell commands that you need to know for now.
 
-### Terminal usage exersises
+### Terminal usage exercises
 
 - Find a package with `fastfetch` in it's name for UCRT64 platform and install it. Run `fastfetch` in your terminal.
 - Find a package with `cow` in it's name for UCRT64 platform and install it. Figure out how to make cow say something.
@@ -153,7 +153,7 @@ That were all shell commands that you need to know for now.
 
 ## IDE
 
-**IDE** (Integrated Development Environment) is the application that you use for writing code. For comfortable development it need to support **syntax highlighting** and **LSP** (Language Server Protocol (thing that your IDE uses for error checking at runtime and code completition)).
+**IDE** (Integrated Development Environment) is the application that you use for writing code. For comfortable development it need to support **syntax highlighting** and **LSP** (Language Server Protocol (thing that your IDE uses for error checking at runtime and code completion)).
 
 ### Choosing an IDE
 
@@ -175,7 +175,7 @@ To configure Zed you need to **replace your** `settings.json` and `keymap.json` 
 I decided that it's easier to show it once than to include dozens of screenshots and paragraghs explaining how to use it.
 
 <details>
-<summary>Shortcuts cheat sheat</summary>
+<summary>Shortcuts cheat sheet</summary>
 
 #### Project and settings
 
@@ -220,7 +220,7 @@ I decided that it's easier to show it once than to include dozens of screenshots
 
 ## Git
 
-**Git** is a distributed **version control system**, but to version control your code you need to _store it_ somethere, of course you can store it on your PC, but if you want to _share it_, or _work together with someone_, or just be able to easly _access it from different devices_ you need a **hosting service** that uses Git. We'll be using **Github** for that.
+**Git** is a distributed **version control system**, but to version control your code you need to _store it_ somethere, of course you can store it on your PC, but if you want to _share it_, or _work together with someone_, or just be able to easily _access it from different devices_ you need a **hosting service** that uses Git. We'll be using **Github** for that.
 
 ### Setup
 
@@ -263,7 +263,7 @@ I think the easiest way to explain Git and GiHub CLI commands is by _examples_:
     gh repo create -c -p https://github.com/infgotoinf/enjoy-raylib <your-repo-name> --public
     ```
 
-#### Commiting ~~crimes~~ changes
+#### Committing ~~crimes~~ changes
 
 To _save_ and _upload changes_ you made to your repo you do this:
 
@@ -271,7 +271,7 @@ To _save_ and _upload changes_ you made to your repo you do this:
     ```shell
     git status
     ```
-1. **Add files** _you want_ to be _updated_ to the **index** so they can be later **commited**:
+1. **Add files** _you want_ to be _updated_ to the **index** so they can be later **committed**:
     ```shell
     git add <filename1> <filename2> <filename3>
     ```
@@ -304,9 +304,9 @@ git clone <link-to-the-repo>
 git pull
 ```
 
-### Git usage exersises
+### Giiteuagte ecitses
 
 _(Do all this inside a folder for your Programming projects)_
 - Using `gh` and `git` cleate a repo and call it with **your GitHub username**. Inside it create a `README.md` file and write something about yourself in it. Commit the changes, then push them to GitHub. Open your profile on GitHub, it should show the text you just wrote.
 - Clone this repo `https://github.com/infgotoinf/c-and-raylib-for-noobs.git`, look what's inside.
-- Create another repo using this template `https://github.com/infgotoinf/enjoy-raylib`, call it something like 'game' or whatever you want. Read it's `README.md` and follow it's build instructions. Build and run the game, if it builds and runs without any errors then harray! 🎉 You did it all correct! 🥳 ... And if you have errors... 😢 🙏
+- Create another repo using this template `https://github.com/infgotoinf/enjoy-raylib`, call it something like 'game' or whatever you want. Read it's `README.md` and follow it's build instructions. Build and run the game both for Desktop and Web (run `make help` if you don't know hot to do that), if it builds and runs without any errors then harray! 🎉 You did it all correct! 🥳 ... And if you have errors... 😢 🙏
