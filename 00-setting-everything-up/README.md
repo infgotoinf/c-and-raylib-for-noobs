@@ -8,7 +8,7 @@ _Words between arrows are placeholders meant to be replaced, for example `<filen
 This entry will provide necessary steps to **setup** your **environment** for _pleasant_ (but _not platform dependent_) development on Windows (if you use Linux then the steps are _mostly_ the same, you need to use your package manager and install packages with their actual name), teach you some basic **bash commands**, how to **use terminal** and **IDE**, **compile** and **run code**.
 
 > [!NOTE]
-> You will need about 4Gb of storage available.
+> You will need about 5Gb of storage available.
 
 ## MSYS2
 
@@ -76,6 +76,7 @@ This paragraph will introduce you to some basic ~~Linux~~ MSYS2 **shell commands
 
 Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS2 ~~and also Arch btw~~ and it is used to (surprise-surprise) manage packages.
 
+- `pacman -Syu` update and upgrade packages.
 - `pacman -Ss <package-name>` to search for a package:
     ```shell
     pacman -Ss matrix
