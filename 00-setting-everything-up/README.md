@@ -52,7 +52,7 @@ pacman -S mingw-w64-ucrt-x86_64-gcc \
 
 This command installs:
 1. `mingw-w64-ucrt-x86_64-gcc` - compiler
-1. `mingw-w64-ucrt-x86_64-git mingw_w64-ucrt-x86_64-github-cli` - source control system
+1. `mingw-w64-ucrt-x86_64-git mingw-w64-ucrt-x86_64-github-cli` - source control system
 1. `mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja make` - build system generator and build system to build an executable, manage dependencies and configure the project
 1. `mingw-w64-ucrt-x86_64-clang-tools-extra` - C/C++ LSP (more about LSP in the [IDE chapter](#ide))
 1. `mingw-w64-ucrt-x86_64-raylib` - a simple and easy-to-use library to enjoy videogames programming!
@@ -118,7 +118,7 @@ Did you notice that `pacman` command? `pacman` is a **package manager** for MSYS
 - `ls -h` or `ls --help` to print more info.
 
 > [!TIP]
-> You can use **Arrow keys Up** and **Down** to scroll through command history.
+> You can use `ArrowUp` and `ArrowDown` to scroll through command history.
 
 #### cd
 
@@ -149,7 +149,6 @@ That were all shell commands that you need to know for now.
 - Enter the root foolder of your C disk with `cd /C`. And using just `ls` and `cd` find there your `Pictures` folder.
 - Think about where you want to store all your programming projects. Using just `cd` and `ls` find a folder there you want (I suggest to use `Documents`, or `Desktop`, or your user's folder for that). Then you entered that folder, create a folder for your projects with `mkdir Programming` or whatever you like to name it. Enter newely create folder.
 
----
 
 ## IDE
 
@@ -165,6 +164,57 @@ That were all shell commands that you need to know for now.
 
 > [!NOTE]
 > You will be using **Zed**. So install it from the [official web site](https://zed.dev/download) if you haven't done that yet.
+
+### Configuring Zed
+
+To configure Zed you need to **replace your** `settings.json` and `keymap.json` **with** same **files from this folder**. You can _watch a video_ from the next chapter to see how to do this.
+
+### Using Zed
+
+I decided that it's easier to show it once than to include dozens of screenshots and paragraghs explaining how to use it.
+
+<details>
+<summary>Shortcuts cheat sheat</summary>
+
+#### Project and settings
+
+| Shortcut | Action |
+| -------- | ------ |
+| `Ctrl+O`       | open a file or a folder |
+| `Ctrl+Shift+S` | save as |
+
+#### Moving around
+
+| Shortcut | Action |
+| -------- | ------ |
+| `Ctrl+P`                  | file picker |
+| `Ctrl+Shift+P`            | command picker |
+| `Ctrl+Alt+B`              | project panel |
+| ``Ctrl+` ``               | terminal |
+| `Ctrl+E`                  | focus editor |
+| `Alt+Right` or `Alt+Left` | go to next or previous pane |
+
+#### Working with code
+
+| Shortcut | Action |
+| -------- | ------ |
+| `Ctrl+/`                    | comment a line |
+| `Ctrl+>` or `Ctrl+<`        | indent or outdent |
+| `Tab` or `Shift+Tab`        | LSP next or previous item |
+| `Ctrl+Left` of `Ctrl+Right` | move left or right one word |
+| `Shift+Arrows`              | select code |
+| Hover                       | show variable/function information |
+| Hover + `Ctrl` + click      | go to variable/function definition |
+
+#### Working with terminal
+
+| Shortcut | Action |
+| -------- | ------ |
+| `Ctrl+C`        | kill running process |
+| `Up` and `Down` | scroll through command history |
+| `Tab`           | antocomplete commands, flags and files |
+
+</details>
 
 
 ## Git
@@ -254,3 +304,8 @@ git pull
 ```
 
 ### Git usage exersises
+
+_(Do all this inside a folder for your Programming projects)_
+- Using `gh` and `git` cleate a repo and call it with **your GitHub username**. Inside it create a `README.md` file and write something about yourself in it. Commit the changes, then push them to GitHub. Open your profile on GitHub, it should show the text you just wrote.
+- Clone this repo `https://github.com/infgotoinf/c-and-raylib-for-noobs.git`, look what's inside.
+- Create another repo using this template `https://github.com/infgotoinf/enjoy-raylib`, call it something like 'game' or whatever you want. Read it's `README.md` and follow it's build instructions. Build and run the game, if it builds and runs without any errors then harray! 🎉 You did it all correct! 🥳 ... And if you have errors... 😢 🙏
