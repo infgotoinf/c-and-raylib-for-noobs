@@ -29,7 +29,7 @@ This entry will provide necessary steps to **setup** your **environment** for _p
     ```
 
 > [!TIP]
-> You can use `Shift+ins` or the **middle mouse button** to _paste text_.
+> You can use `Shift+ins` or the **middle mouse button** to _paste text_, `Ctrl+ins` to copy.
 
 > [!IMPORTANT]
 > Rerun the command if you get any errors.
@@ -242,7 +242,7 @@ I decided that it's easier to show it once than to include dozens of screenshots
 4. Set **your user email** and **user name** for Git operations:
     ```shell
     git config --global user.email "you@example.com" # Put your email here
-    git congit --global user.name "Your Name" # Put your name here
+    git config --global user.name "Your Name" # Put your name here
     ```
 
 That was the whole Git setup.
