@@ -1,0 +1,91 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "tab": "editor::ContextMenuNext"
+    }
+  },
+
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "shift-tab": "editor::ContextMenuPrevious"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "ctrl-u": "editor::UndoSelection"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-.": "editor::Indent"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-,": "editor::Outdent"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-right": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-left": "pane::ActivatePreviousItem"
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-right": "pane::GoForward"
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-left": "pane::GoBack"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-e": "editor::ToggleFocus"
+    }
+  },
+  {
+    "context": "!SettingsWindow",
+    "bindings": {
+      "ctrl-'": "zed::OpenSettings"
+    }
+  },
+  {
+    "context": "!SettingsWindow",
+    "unbind": {
+      "ctrl-,": "zed::OpenSettings"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-'": "zed::OpenSettingsFile"
+    }
+  },
+  {
+    "unbind": {
+      "ctrl-alt-,": "zed::OpenSettingsFile"
+    }
+  }
+]
