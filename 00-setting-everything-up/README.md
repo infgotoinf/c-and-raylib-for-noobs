@@ -39,7 +39,7 @@ pacman -Syu
 
 ```shell
 pacman -S mingw-w64-ucrt-x86_64-gcc \
-    mingw-w64-ucrt-x86_64-git mingw_w64-ucrt-x86_64-github-cli \
+    mingw-w64-ucrt-x86_64-git mingw-w64-ucrt-x86_64-github-cli \
     mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja make\
     mingw-w64-ucrt-x86_64-clang-tools-extra \
     mingw-w64-ucrt-x86_64-raylib \
