@@ -12,7 +12,6 @@
       "tab": "editor::ContextMenuNext"
     }
   },
-
   {
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
@@ -86,6 +85,21 @@
   {
     "unbind": {
       "ctrl-alt-,": "zed::OpenSettingsFile"
+    }
+  },
+  {
+    "unbind": {
+      "ctrl-o": "workspace::OpenFiles"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-o": "workspace::Open"
+    }
+  },
+  {
+    "unbind": {
+      "ctrl-k ctrl-o": "workspace::Open"
     }
   }
 ]

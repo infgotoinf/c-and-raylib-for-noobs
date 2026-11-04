@@ -24,9 +24,9 @@ This entry will provide necessary steps to **setup** your **environment** for _p
 
 
 3. **Update packages**. In UCRT64 terminal window type this:
-```sh
-pacman -Syu
-```
+    ```shell
+    pacman -Syu
+    ```
 
 > [!TIP]
 > You can use `Shift+ins` or the **middle mouse button** to _paste text_.
@@ -36,16 +36,15 @@ pacman -Syu
 
 
 4. **Install** a **compiler** with other necessary **tools for development**:
-
-```shell
-pacman -S mingw-w64-ucrt-x86_64-gcc \
-    mingw-w64-ucrt-x86_64-git mingw-w64-ucrt-x86_64-github-cli \
-    mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja make\
-    mingw-w64-ucrt-x86_64-clang-tools-extra \
-    mingw-w64-ucrt-x86_64-raylib \
-    mingw-w64-ucrt-x86_64-emscripten \
-    fish
-```
+    ```shell
+    pacman -S mingw-w64-ucrt-x86_64-gcc \
+        mingw-w64-ucrt-x86_64-git mingw-w64-ucrt-x86_64-github-cli \
+        mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja make\
+        mingw-w64-ucrt-x86_64-clang-tools-extra \
+        mingw-w64-ucrt-x86_64-raylib \
+        mingw-w64-ucrt-x86_64-emscripten \
+        mingw-w64-ucrt-x86_64-micro fish
+    ```
 
 <details>
 <summary>Explanation of the command</summary>
@@ -57,14 +56,21 @@ This command installs:
 1. `mingw-w64-ucrt-x86_64-clang-tools-extra` - C/C++ LSP (more about LSP in the [IDE chapter](#ide))
 1. `mingw-w64-ucrt-x86_64-raylib` - a simple and easy-to-use library to enjoy videogames programming!
 1. `mingw-w64-ucrt-x86_64-emscripten` - library to compile C/C++ code to WebAssembly, to run it in a web browser (it's package is 1.6Gb on Windows btw)
+1. `mingw-w64-ucrt-x86_64-micro` - intuitive terminal text editor
 1. `fish` - user-friendly interactive Unix shell
 
 </details>
 
 5. Add UCRT64's bin to *PATH* so all applications can find and use the thing you just installed (we need this so IDE can find LSP and compiler):
-```shell
-setx PATH "%PATH%;C:\msys64\ucrt64\bin"
-```
+    ```shell
+    setx PATH "%PATH%;C:\msys64\ucrt64\bin"
+    ```
+
+6. Set `EDITOR` variable to **micro**:
+    ```shell
+    export VISUAL=micro
+    export EDITOR="$VISUAL"
+    ```
 
 ---
 
