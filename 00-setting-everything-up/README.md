@@ -176,6 +176,9 @@ That were all shell commands that you need to know for now.
 
 To configure Zed you need to **replace your** `settings.json` and `keymap.json` **with** same **files from this folder**. You can _watch a video_ from the next chapter to see how to do this.
 
+#### Zed IDE begginer tutorial on YouTube
+[![YouTube video](https://img.youtube.com/vi/GZN0Tu6EwOs/0.jpg)](https://www.youtube.com/watch?v=GZN0Tu6EwOs)
+
 ### Using Zed
 
 I decided that it's easier to show it once than to include dozens of screenshots and paragraghs explaining how to use it.
