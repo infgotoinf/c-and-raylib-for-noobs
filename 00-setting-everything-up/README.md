@@ -284,7 +284,7 @@ To _save_ and _upload changes_ you made to your repo you do this:
     ```shell
     git add <filename1> <filename2> <filename3>
     ```
-    or if you want to add all changes:
+    or if you want to add all changes in current directory:
     ```shell
     git add .
     ```
