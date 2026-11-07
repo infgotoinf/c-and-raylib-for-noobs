@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_whitespaces": "all",
+  "whitespace_map": {
+    "space": " "
+  },
   "git": {
     "diff_base": "default_branch"
   },

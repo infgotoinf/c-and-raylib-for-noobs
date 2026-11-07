@@ -66,10 +66,11 @@ This command installs:
     setx PATH "%PATH%;C:\msys64\ucrt64\bin"
     ```
 
-6. Set `EDITOR` variable to **micro**:
+6. Set `EDITOR` variable to **micro** in fish:
     ```shell
-    export VISUAL=micro
-    export EDITOR="$VISUAL"
+    fish
+    set -Ux VISUAL micro
+    set -Ux EDITOR "$VISUAL"
     ```
 
 ---
