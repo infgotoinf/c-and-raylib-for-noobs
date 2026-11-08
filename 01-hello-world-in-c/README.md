@@ -180,14 +180,19 @@ int main(void)
 ```
 
 - Comments `/* ... */` `// ...`
+    
     Anything between `/*` and `*/` or after `//` is a comment and gets ignored by the compiler. You can have how many comments you want in your code or none of them, it doesn't matter, compiler will completely ignore them.
 - Includes `#include <...>`
+    
     Lines that start with `#include` tell the _C preprocessor_ to _insert_ the _contents_ of some _file_ right there. And `<stdio.h>` is the **"Standard I/O"** _header file_, it provides us `printf` function, so we can invoke it. If you comment out the line with `#include <stdio.h>` the compiler will tell us to provide `printf` declaration or add `#include <stdio.h>` line.
 - `main` function
+    
     Right after include we see our _main function_ `int main(void)` and then curly braces (`{` and `}`) with it's definition. In C and C++ this is the function which gets called upon executing our code.
     - `return 0;`
+        
         This line is related to our `main` function, it makes our program to exit with code `0`, which means that it was executed without any errors. Then the program reaches that line
 - `printf` function
+    
     This function prints text to the console and we call it with one parameter, `"Hello, World!\n"`. It looks straightforward, except for that `\n` at the end. This called an **escape sequence**. Escape sequence always begins with a backslash (`\`) and lets us write a character that otherwise couldn't be written. And `\n` means a **newline** character.
 
 > [!NOTE]
