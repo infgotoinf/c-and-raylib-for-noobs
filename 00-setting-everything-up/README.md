@@ -181,7 +181,7 @@ To configure Zed you need to **replace your** `settings.json` and `keymap.json` 
 
 I decided that it's easier to show it once than to include dozens of screenshots and paragraghs explaining how to use it.
 
-#### Zed IDE begginer tutorial on YouTube
+#### Zed IDE beginner tutorial on YouTube
 [![YouTube video](https://img.youtube.com/vi/GZN0Tu6EwOs/0.jpg)](https://www.youtube.com/watch?v=GZN0Tu6EwOs)
 
 <details>
@@ -314,7 +314,7 @@ git clone <link-to-the-repo>
 git pull
 ```
 
-### Giiteuagte ecitses
+### Git and GitHub CLI usage exercises
 
 _(Do all this inside a folder for your Programming projects)_
 - Using `gh` and `git` cleate a repo and call it with **your GitHub username**. Inside it create a `README.md` file and write something about yourself in it. Commit the changes, then push them to GitHub. Open your profile on GitHub, it should show the text you just wrote.

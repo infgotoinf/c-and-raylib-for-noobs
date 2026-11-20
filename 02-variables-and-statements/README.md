@@ -6,7 +6,7 @@ const char* var = "Hello, I am a variable!";
 
 ## Variables
 
-Variable is a human readable **name** that refers to some **data** in memory. You can think of **memory** as a **big array of bytes**. Each variable name maps to some specific memory index or, more precisely, **adress**.
+Variable is a human readable **name** that refers to some **data** in memory. You can think of **memory** as a **big array of bytes**. Each variable name maps to some specific memory index or, more precisely, **address**.
 
 ### Variable names
 
@@ -19,9 +19,9 @@ For variable names you can use any characters in the range of 0-9, A-Z, a-z, and
 > [!NOTE]
 > Fun fact: you can use Unicode characters for variable names, so you can name it for example `переменная` or `😎😀🥰`. Tho nobody seriously uses this.
 
-### A little bit about C standarts
+### A little bit about C standards
 
-When you read about some library or project written in C or C++ you will often see something like C89 (ANSI C), or C99, C11, C23, C++11, C++14, C++17, C++23, etc. instead of just C or C++. That's called **standard** and number means **year** then it was introduced. Each standart adds new **features** to the language, **reworks** some old ones and **deprecates** the bad ones. You'll be using C23 and C++23.
+When you read about some library or project written in C or C++ you will often see something like C89 (ANSI C), or C99, C11, C23, C++11, C++14, C++17, C++23, etc. instead of just C or C++. That's called **standard** and number means **year** then it was introduced. Each standard adds new **features** to the language, **reworks** some old ones and **deprecates** the bad ones. You'll be using C23 and C++23.
 
 ### Variable types
 
