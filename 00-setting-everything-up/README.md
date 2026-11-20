@@ -262,7 +262,7 @@ I think the easiest way to explain Git and GiHub CLI commands is by _examples_:
 0. If you want to use an _existing folder_, you need to **initialize** your repository:
     ```shell
     cd <folder>
-    got init
+    git init
     ```
 1. Create repository on GitHub:
     ```shell
